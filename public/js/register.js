@@ -22,7 +22,6 @@ const signupFormHandler = async (event) => {
   }
 };
 
-
 // Event listener for signup form
 const signupForm = document.querySelector(".signup-form");
 if (signupForm) {

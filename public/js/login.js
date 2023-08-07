@@ -12,7 +12,7 @@ const loginFormHandler = async (event) => {
     });
     // redirect the browser to the dashboard page
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/dashboard');
     } else {
       alert("Incorrect email or password, please try again");
     }
