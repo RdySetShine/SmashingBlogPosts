@@ -7,7 +7,7 @@ const blogRoutes = require("./blogpostscontroller.js");
 const userRoutes = require("./usercontroller");
 // Define your routes
 const blogpostcommentRoutes = require("./blogpostcommentscontroller")
-router.use("/blog", blogRoutes);
+router.use("/dashboard", blogRoutes);
 router.use("/user", userRoutes )
 router.use("/comment", blogpostcommentRoutes)
 module.exports = router;
