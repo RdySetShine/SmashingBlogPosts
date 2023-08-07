@@ -1,0 +1,101 @@
+{{!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs'R'Us - Everything Blogs</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  --}}
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/expense.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      /* Your custom CSS styles here */
+
+      blockquote {
+        border-left: none !important;
+        padding-left: 0;
+        margin-left: 0;
+      }
+    </style>
+
+    <title>Blogs'R'Us</title>
+    {{!--
+  </head> --}}
+
+<body>
+  <header>
+    <nav class="navbar navbar-inverse navigationMenu">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id=headTitle color class="navbar-brand" href="/">Blogs'R'Us</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li>
+              {{#if logged_in}}
+
+              {{!-- Dbl curly {{ }} does 1 of 2 things, 1. checks for something in HTML / 2. does something in HTML --}}
+
+              <button id="logout1">
+                <span class="glyphicon glyphicon-log-in"></span>logout
+              </button>
+              {{else}}
+              <a href="/login">
+                <span class="glyphicon glyphicon-log-in"></span>login
+              </a>
+              {{/if}}
+
+              {{!-- '{{/}}' means its representing the end of a block in the function --}}
+              {{!-- '{{*}}' means its representing the begining of a function --}}
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  {{!--
+
+  <body> --}}
+    <main>
+      {{{ body }}}
+
+      {{!-- '{{{ }}}' means your inserting a random variable into the already present HTML --}}
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+    <footer>
+      <a href="/">
+        <h1>&copy; 2023 Blogs'R'Us</h1>
+      </a>
+    </footer>
+
+  </body>
+
+
+
+</html>

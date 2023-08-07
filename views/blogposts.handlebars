@@ -1,0 +1,70 @@
+{{!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/expense.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Blogs'R'Us</title>
+</head>
+
+<body>
+
+  <main> --}}
+
+{{#if logged_in}}
+
+<button id="postBlog"> 
+  <a href="/newwblog"> Create BlogPost </a> </button>
+
+
+{{/if}}
+
+    {{#each blogs as |blog| }}
+    <div class="row mb-4 blog">
+      <div class="col-md-5">
+        <h2>
+          <a href="/blog/{{blog.id}}">{{blog.title}}</a>
+        </h2>
+
+{{#if blog.canEdit }}
+
+<button id="editBlog"> 
+  <a href="/editblog/{{blog.id}}"> Edit Blog </a> </button>
+
+
+<button id="deleteBlog"> 
+  <a href="/deleteblog/{{blog.id}}"> Delete Blog </a> </button>
+
+
+
+
+{{/if}}
+
+        {{!-- <p>Posted by {{user.username}} on {{format_date blog.date_created}}</p> --}}
+      </div>
+      <div class="col-md-7">
+        <p>
+          {{blog.blogbody}}
+        </p>
+      </div>
+    </div>
+    {{/each}}
+
+
+
+
+
+    {{!--
+  </main> --}}
+
+  {{!--
+  <script src="/js/blogpost.js"></script> --}}
+  {{!--
+</body>
+
+</html> --}}

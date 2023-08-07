@@ -1,0 +1,14 @@
+[
+    {
+        "blogcommentbody": "mvc is important",
+        "username": "bruno",
+        "user_id": "2",
+        "blogpost_id": "1"
+    },
+    {
+        "blogcommentbody": "mvc is not important",
+        "username": "amrit",
+        "user_id": "1",
+        "blogpost_id": "2"
+    }
+]

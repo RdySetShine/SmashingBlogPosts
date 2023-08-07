@@ -1,0 +1,49 @@
+
+   
+    <div class="row mb-4 blog">
+      <div class="col-md-5">
+        <h2>
+       {{blog.title}}
+        </h2>
+
+
+        {{!-- <p>Posted by {{user.username}} on {{format_date blog.date_created}}</p> --}}
+      </div>
+
+    <div class="col-md-5">
+        <h2>
+       {{blog.date_created}}
+       
+        </h2>
+<h3>
+{{blog.User.dataValues.username}}
+</h3>
+
+        {{!-- <p>Posted by {{user.username}} on {{format_date blog.date_created}}</p> --}}
+      </div>
+
+
+      <div class="col-md-7">
+        <p>
+          {{blog.blogbody}}
+        </p>
+      </div>
+    </div>
+   
+   
+    <div class="row mb-4 blog">
+      <div class="col-md-5">
+        <h2>
+          {{comments.username}}
+        </h2>
+
+
+        {{!-- <p>Posted by {{user.username}} on {{format_date blog.date_created}}</p> --}}
+      </div>
+      <div class="col-md-7">
+        <p>
+          {{ comments.blogcommentbody}}
+        </p>
+      </div>
+    </div>
+   
