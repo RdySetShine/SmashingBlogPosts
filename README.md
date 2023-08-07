@@ -4,7 +4,7 @@
 
 ## images
 
-![Alt text](public/images/techtalkmockup.jpg)
+![Alt text](Assets/SmashingPostsMock1.jpeg)
 
 ## Table of Contents
 
@@ -74,7 +74,7 @@ Amrit
 
 For any questions, please reach out via GitHub or email:
 
-- GitHub: [BrunoRosarini](https://github.com/RdySetShine)
+- GitHub: [BrunoRosarini](https://github.com/RdySetShine/SmashingBlogPosts)
 
 - Email: (rosarinibruno@gmail.com)
 
